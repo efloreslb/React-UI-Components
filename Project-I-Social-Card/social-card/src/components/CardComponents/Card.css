@@ -1,1 +1,31 @@
 /* All styles for your Card Components live here */
+
+.card-container {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    max-width: 490px;
+    margin-left: 100px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-img img {
+    max-width: 490px;
+    width: 100%;
+}
+
+.card-content {
+    max-width: 490px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.card-content h2 {
+    font-size: 16px;
+}
+
+.card-content p:nth-child(3) {
+    color: gray;
+}

@@ -1,1 +1,41 @@
 /* All styles for your header Components live here */
+.header {
+    display: flex;
+    border: 1px solid red;
+}
+
+.header-img {
+    width: 100px;
+    border: 1px solid blue;
+    
+}
+
+.header-img img {
+    width: 100%;
+}
+
+.header-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border: 1px solid green;
+}
+
+.header-title h1 {
+    font-size: 14px;
+}
+
+.header-title p {
+    color: gray;
+}
+
+.header-title p:nth-child(3)::before {
+    content: ".";
+    font-size: 16px;
+    
+}
+
+.header-content {
+    border: 1px dashed black;
+}

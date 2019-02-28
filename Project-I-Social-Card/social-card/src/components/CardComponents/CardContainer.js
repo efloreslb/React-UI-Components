@@ -6,10 +6,10 @@ import CardContent from './CardContent';
 
 const CardContainer = () => {
     return (
-        <React.Fragment>
+        <div className="card-container">
             <CardBanner />
             <CardContent />
-        </React.Fragment>
+        </div>
     )
 }
 

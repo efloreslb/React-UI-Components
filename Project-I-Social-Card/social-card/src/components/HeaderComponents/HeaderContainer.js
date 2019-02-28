@@ -7,11 +7,15 @@ import HeaderContent from './HeaderContent';
 
 const HeaderContainer = () => {
     return (
-        <React.Fragment>
-            <ImageThumbnail />
-            <HeaderTitle />
-            <HeaderContent />
-        </React.Fragment>
+        <div className="header">
+            <div className="header-img">
+                <ImageThumbnail />
+            </div>
+            <div className="header-content-container">
+                <HeaderTitle />
+                <HeaderContent />
+            </div>
+        </div>
     );
 };
 
