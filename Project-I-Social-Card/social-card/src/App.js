@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+import ImageThumbnail from "./components/HeaderComponents/ImageThumbnail"
+
+
 const App = () => {
   return (
     <div>
@@ -17,8 +20,14 @@ const App = () => {
           inside of this file in order to make them work.
         </strong>
       </p>
+
+      <ImageThumbnail />
     </div>
+
+    
   );
 };
+
+
 
 export default App;
