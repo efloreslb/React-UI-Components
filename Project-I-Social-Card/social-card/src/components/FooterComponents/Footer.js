@@ -4,10 +4,12 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className="footer-container">
-            <i class="far fa-comment"></i>
-            <i class="fas fa-retweet">6</i>
-            <i class="far fa-heart">4</i>
-            <i class="far fa-envelope"></i>
+            <div className="footer">
+                <i class="far fa-comment"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-envelope"></i>
+            </div>
         </div>
     )
 }

@@ -1,7 +1,22 @@
 .footer-container {
     width: 100%;
+    padding-left: 68px;
+    border-bottom: 1px solid darkgray;
+}
+
+
+.footer-container {
+    width: 245px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding: 15px 0;
 
     border: 1px solid salmon;
+}
+
+.footer-container i {
+    font-size: 20px;
+    color: darkgray;
+    
 }
