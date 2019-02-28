@@ -7,11 +7,11 @@ import HeaderContent from './HeaderContent';
 
 const HeaderContainer = () => {
     return (
-        <div>
+        <React.Fragment>
             <ImageThumbnail />
             <HeaderTitle />
             <HeaderContent />
-        </div>
+        </React.Fragment>
     );
 };
 
