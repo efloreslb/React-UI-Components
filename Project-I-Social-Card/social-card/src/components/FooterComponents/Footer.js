@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer">
                 <i class="far fa-comment"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
+                <i class="fas fa-retweet"></i>6
+                <i class="far fa-heart"></i>4
                 <i class="far fa-envelope"></i>
             </div>
         </div>

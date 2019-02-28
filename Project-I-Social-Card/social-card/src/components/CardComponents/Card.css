@@ -32,10 +32,11 @@
 }
 
 .card-content p {
-    margin-top: 8px;
-    margin-bottom: 9px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .card-content p:nth-child(3) {
     color: gray;
+    margin-bottom: 8px;
 }

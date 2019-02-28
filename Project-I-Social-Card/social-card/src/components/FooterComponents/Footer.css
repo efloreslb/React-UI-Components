@@ -1,22 +1,24 @@
 .footer-container {
     width: 100%;
-    padding-left: 68px;
+    height: 51px;
+    
     border-bottom: 1px solid darkgray;
 }
 
 
-.footer-container {
+.footer {
     width: 245px;
     display: flex;
-    justify-content: space-between;
-
-    padding: 15px 0;
-
-    border: 1px solid salmon;
+    margin-left: 23px;
+    padding: 20px 0;
+    color: darkgray;
+    font-weight: 700;
 }
 
 .footer-container i {
-    font-size: 20px;
+    font-size: 16px;
     color: darkgray;
-    
+    cursor: pointer;
+    margin-left: 45px;
+    padding-right: 15px;
 }
