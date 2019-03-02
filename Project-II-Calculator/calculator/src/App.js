@@ -34,16 +34,39 @@ const buttons = [
   }
 ]
 
+const symbols = [
+  {
+    text: "%"
+  },
+  {
+    text: "x"
+  },
+  {
+    text: "-"
+  },
+  {
+    text: "+"
+  },
+  {
+    text: "="
+  }
+]
+
 //Why do we need curly braces before calling array???
 
 const App = () => {
   return (
     <div>
 
-      <CalculatorDisplay />
+      <CalculatorDisplay display={0}/>
       <div>
         {buttons.map((button) => (    
           <NumberButton text={button.text} />
+        ))}
+      </div>
+      <div>
+      {symbols.map((symbol) => (    
+          <NumberButton text={symbol.text} />
         ))}
       </div>
       <ActionButton />
