@@ -1,0 +1,33 @@
+.container {
+    width: 456px;
+    background-color: grey;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 125px 90px 90px 90px 90px 90px;
+    grid-gap: 2.5px;
+    
+}
+
+.calc-display{
+    grid-column: 1/5;
+    background-color: rgb(66, 65, 65);
+    color: #fff;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 24px;
+    font-size: 76px;
+}
+
+.clear {
+    grid-column: 1/4;
+}
+
+.symbols {
+    
+}
+
+.numbers {
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -4,9 +4,10 @@ import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay'
 import NumberButton from './components/ButtonComponents/NumberButton';
 import ActionButton from './components/ButtonComponents/ActionButton';
 
-const buttons = [
+const numbers = [
   {
-    text: 1
+    text: 1,
+    style: ("gray")
   },
   {
     text: 2
@@ -52,24 +53,25 @@ const symbols = [
   }
 ]
 
-//Why do we need curly braces before calling array???
+//Why do we need curly braces before calling array??? - interpolation
 
 const App = () => {
   return (
-    <div>
-
-      <CalculatorDisplay display={0}/>
-      <div>
-        {buttons.map((button) => (    
-          <NumberButton text={button.text} />
+    <div className="container">
+      <div className="calc-display"><CalculatorDisplay display={0} /></div>
+      <div className="clear"><ActionButton text={"clear"}/></div>
+      <div className="symbols">
+        {symbols.map((symbol) => (    
+          <NumberButton key={symbol.text} text={symbol.text} buttonStyle={symbol.style}/>
         ))}
       </div>
-      <div>
-      {symbols.map((symbol) => (    
-          <NumberButton text={symbol.text} />
+      <div className="numbers">
+        {numbers.map((number) => (    
+          <NumberButton key={number.text} text={number.text} buttonStyle={number.style}/>
         ))}
       </div>
-      <ActionButton />
+      
+      <ActionButton text={0}/>
 
     </div>
   );
